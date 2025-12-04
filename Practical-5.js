@@ -12,7 +12,7 @@ console.log(`Hello, ${name}! Welcome to Node.js events.
 
 eventEmitter.emit("greet"
 ,
-"Ayush");
+"Prashant");
 
 #CONNECT NODEJS TO MONGODB AND INSERT A USER RECORD
 const { MongoClient } = require("mongodb");
@@ -26,9 +26,9 @@ console.log("Connected to MongoDB ✅");
 const db = client.db("practical5"); 
 const users = db.collection("users"); 
 const newUser = {
-name: "Ayush"
+name: "Prashant"
 ,
-email: "ayushtomar@gmail.com"
+email: "prashant@gmail.com"
 ,
 age: 21,
 createdAt: new Date()
@@ -43,4 +43,5 @@ console.error("Error:"
 await client.close();
 }
 }
+
 run()
