@@ -5,7 +5,7 @@ EMIT AN EVENT "greet" AND LISTEN TO IT // code6.js const EventEmitter = require(
 
 👉 Creates a new eventEmitter object. This object can: listen for events (.on()) emit (trigger) events (.emit()) js // Register (listen) for the "greet" event eventEmitter.on("greet", (name) => { console.log(Hello, ${name}! Welcome to Node.js events.\n); });
 
-👉 Here we’re saying: “When the event named greet happens, run this function.” The callback (name) => { ... } will get any data passed with the event. In this case, it prints a personalized greeting with the provided name. js // Emit the "greet" event eventEmitter.emit("greet", "Mohit");
+👉 Here we’re saying: “When the event named greet happens, run this function.” The callback (name) => { ... } will get any data passed with the event. In this case, it prints a personalized greeting with the provided name. js // Emit the "greet" event eventEmitter.emit("greet", "Prashant");
 
 👉 This triggers the greet event and passes "Asmi" as an argument. Since we already registered a listener for "greet", the function runs and prints: css Hello, Asmi! Welcome to Node.js events. ⚡ If you emit eventEmitter.emit("greet", "John"), it would print: css Hello, John! Welcome to Node.js events.
 
@@ -21,7 +21,7 @@ EMIT AN EVENT "greet" AND LISTEN TO IT // code6.js const EventEmitter = require(
 
 👉 Selects the database practical5.
 
-👉 Selects the collection users where documents will be stored. js const newUser = { name: "Mohit", email: "mohit@.com", age: 21, createdAt: new Date() };
+👉 Selects the collection users where documents will be stored. js const newUser = { name: "Prashant", email: "prashant@.com", age: 21, createdAt: new Date() };
 
 👉 Creates a JavaScript object representing the new user to insert. createdAt stores the current timestamp. js const result = await users.insertOne(newUser); console.log("User inserted with _id:", result.insertedId);
 
